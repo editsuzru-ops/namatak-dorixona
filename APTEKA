@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Na'matak xususiy dorixonasi</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+header {
+  background: #0a7c5a;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+nav a:hover {
+  background: #0a7c5a;
+  color: white;
+}
+
+.section {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+button {
+  background: #0a7c5a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Na'matak Dorixona</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav id="menu">
+  <a href="#home">🏠 Bosh sahifa</a>
+  <a href="#products">💊 Mahsulotlar</a>
+  <a href="#about">ℹ️ Dorixona haqida</a>
+  <a href="#contact">📞 Aloqa</a>
+</nav>
+
+<div class="section" id="home">
+  <h2>Sog‘lig‘ingiz ishonchli qo‘llarda</h2>
+  <p>Na'matak xususiy dorixonasi — sifatli va ishonchli dori vositalari.</p>
+</div>
+
+<div class="section" id="products">
+  <h2>💊 Mashhur mahsulotlar</h2>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae">
+    <h3>Vitaminlar</h3>
+    <p>Immunitetni mustahkamlaydi</p>
+    <button>Batafsil</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+    <h3>Og‘riq qoldiruvchi</h3>
+    <p>Tez va samarali yordam</p>
+    <button>Batafsil</button>
+  </div>
+</div>
+
+<div class="section" id="about">
+  <h2>ℹ️ Biz haqimizda</h2>
+  <p>Dorixonamizda faqat sertifikatlangan dori vositalari mavjud.</p>
+</div>
+
+<div class="section" id="contact">
+  <h2>📞 Aloqa</h2>
+  <p>📍 Manzil: Mahalla markazi</p>
+  <p>☎️ Telefon: +998 90 000 00 00</p>
+</div>
+
+<footer>
+  © 2026 Na'matak xususiy dorixonasi
+</footer>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
